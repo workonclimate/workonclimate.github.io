@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+
+<head>
+<meta charset="utf-8">
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:image" content="https://workonclimate.github.io/woc-pop-logo.png" />
+
+<title>Work on Climate</title>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-173069847-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-173069847-1');
+</script>
+
+
+<style>
+  *{
+    font-family: 'Roboto', sans-serif;
+    color: #323339;
+  }
+
+  h1{
+    font-size: 60px;
+    text-transform: uppercase;
+    text-shadow: -4px 4px #DAE8F5;
+  }
+
+  h2{
+    margin-top: 64px;
+    font-weight: 300;
+  }
+
+  h3{
+    text-transform: uppercase;
+    font-size: 24px;
+  }
+
+  .lead-p{
+    font-size: 18px;
+    margin-right: 32px;
+  }
+
+  p{
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+/*  .header{
+    text-align: right;
+    margin-bottom: 16px;
+  }
+
+  .header a{
+    font-size:14px;
+    text-decoration: none;
+    color: #6d6e75;
+    margin-left: 16px;
+    margin-right: 8px;
+    display: inline-block;
+  }
+  .header a:hover{
+    color: #323339;
+    text-decoration: underline;
+  }*/
+
+  .values-grid{
+    display: grid;
+/*    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 16px;*/
+/*    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));*/
+    grid-gap: 16px;
+/*    align-items: center;
+    justify-items: center;*/
+  }
+
+  .value-box{
+    background-color: #DAE8F5;
+    padding: 16px 32px;
+    box-shadow: -2px 2px #FBFBFB;
+  }
+
+  .how-it-works-grid{
+    display: grid;
+    grid-column-gap: 16px;
+/*    grid-template-columns: min-content min-content;*/
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .how-it-works-grid>img{
+    width: 350px;
+  }
+
+  .how-it-works-grid>div{
+    padding: 0px 32px;
+  }
+
+  .join-us-button{
+    text-transform: uppercase;
+    background-color: #FFDE6A;
+    font-weight: 900;
+    padding: 8px 16px;
+    border: none;
+    box-shadow: -4px 4px #FBFBFB;
+  }
+
+  .join-us-button img{
+    margin-left: 4px;
+    height: 16px;
+    position: relative;
+    top: 2px;
+  }
+
+  .join-us-button:hover{
+    background-color: #face32;
+    cursor: pointer;
+  }
+
+  .about-us-footer{
+    background-color: #323339;
+  }
+
+  .about-us-footer-grid{
+    margin: 0 auto;
+    max-width: 700px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 64px;
+    align-items: center;    
+  }
+  
+  .about-us-footer .text, .about-us-footer .text *, .about-us-footer h2{
+    color: white;
+  }
+
+  .tiny{
+    margin:16px 0px;
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.4);
+  }
+
+  .core-members>div{
+    color: #FFDE6A;
+    font-size: 10px;
+    margin-bottom: 6px;
+  }
+
+
+@media (max-width: 699px){
+  /* hide all but one image for mobile */
+  .how-it-works-grid img:not(:first-child){
+    display: none;
+  }
+  .values-grid{
+    grid-template-columns: minmax(250px, 350px);
+  }
+
+  .how-it-works-grid div{
+    padding-left: 0px;
+  }
+
+  .about-us-footer-grid{
+    grid-template-columns: 1fr; 
+  }
+
+  .core-members{
+    margin-top: 32px;
+    margin-bottom: 16px;
+  }
+
+  .tiny {
+    margin: 4px 0px;
+  }
+
+  .about-us-footer-grid{
+    padding: 0px 32px;  
+    padding-bottom: 16px;  
+  }
+
+}
+
+@media (min-width: 700px){
+  /* short text, so needs a bit on the top when in grid view */
+  .community{
+    margin-top:90px;
+  }
+  .values-grid{
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .about-us-footer-grid{
+    padding-left: 64px;    
+  }
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+
+
+<div style="max-width: 700px; margin: 0 auto; padding-left: 32px">
+
+<!--<div class="header">
+  <a href="#our-values">Our values</a>
+  <a href="#how-it-works">How it works</a>
+  <a href="#about-us">About us</a>
+</div> -->
+
+<h1>Work on Climate</h1>
+
+<p class="lead-p">
+We are an action-oriented Slack community for people who want to work long-term on addressing the climate crisis.
+</p>
+
+<button class="join-us-button">Join us on slack <img src="slack.png"></button>
+
+
+<h2 id="our-values">Our values</h2>
+
+<div class="values-grid">
+
+<div class="value-box">
+  <h3>We focus on action</h3>
+  <p>Get your hands busy with something, and boom, you're moving!</p>
+</div>
+
+<div class="value-box">
+  <h3>We are supportive</h3>
+  <p>Celebrate and encourage the progress of others as your own, and scale yourself by mentoring others.</p>
+</div>
+
+<div class="value-box">
+  <h3>We team up</h3>
+  <p style="margin-top:52px">Don't go alone — work with different people, learn from each other, find someone you vibe with!</p>
+</div>
+
+</div>
+
+<h2>How it works</h2>
+
+
+<div class="how-it-works-grid">
+
+<img src="tasks.png">
+
+<div>
+  <h3>Tasks</h3>
+  <p>We provide a list of suggested tasks that you can use to seed your climate journey. Our tasks are sourced from our network of experts in the field, and each task is designed to help you begin start familiarizing yourself with interesting subareas of the climate problem. Each task offers extensions that allow you to develop a unique perspective. </p>
+</div>
+
+<div>
+  <h3 class="community">Community</h3>
+  <p>We are not just a task list though. We are a supportive community that celebrates you and the actions you take. We want to be your social accountability device so that you are motivated to explore the space.</p>
+</div>
+
+<img src="community.png">
+
+<img src="graduate.png">
+
+<div>
+  <h3>Graduate</h3>
+  <p>Our goal is to graduate as many community members as possible, moving them from the exploration phase into working in climate. If you want to start your own company, we provide athe forum for you to meet like minded co-founders and work on projects together. If you want to join a company, we provide a jobs forum from our network of top climate employers.</p>
+</div>
+
+</div> <!-- end how it works grid -->
+
+<div style="text-align: center; margin:48px 0px">
+<button class="join-us-button" style="font-size:28px; padding: 16px">Join us on slack 
+  <img src="slack.png" style="height:24px"></button>
+</div>
+
+</div> <!-- end centering div -->
+
+<div class="about-us-footer">
+<div class="about-us-footer-grid">
+  <h2>About us</h2>
+  <div></div>
+
+  <div>
+    <div class="text">
+      <p>
+        This is about you — not us.
+      </p>
+
+      <p>
+        But for those who are curious about the faces behind the curtain, we are a small group of people who deeply believe climate change is the most important problem facing humanity of our time, and want to see more talented folk join us in the space.
+      </p>
+    </div>
+
+<!--    <button class="join-us-button" style="box-shadow: -4px 4px rgba(251, 251, 251, 0.2);">Join us on slack <img src="slack.png"></button> -->
+  </div>
+
+  <div class="core-members">
+    <div>Eugene Kirpichov</div>
+    <div>Cassandra Xia</div>
+    <div>Eva Illescas</div>
+    <div>Marie Herring</div>
+    <div>Dave Fork</div>
+    <div>Jeremy Brewer</div>
+    <div>Sam Levec-Levey</div>
+    <div>Thad Hughes</div>
+    <div>Carl Elkin</div>
+  </div>
+
+  <div class="tiny">Work on Climate</div>
+
+  <div class="tiny">Images designed by katemangostar at Freepik.</div>
+
+</div>
+</div> <!-- end about-us-footer -->
+
+
+</body>
+
