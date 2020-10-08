@@ -342,11 +342,9 @@ We are an action-oriented Slack community for people serious about wanting to wo
 </body>
 
 <script>
+  // https://developers.google.com/analytics/devguides/collection/gtagjs/events
   function gaFormClick(){
-    ga('send', 'event', {
-      eventCategory: 'form',
-      eventAction: 'click',
-    });
+    gtag('event', 'form_click');
   }
   $('.join-us-button').click(gaFormClick);
 </script>
