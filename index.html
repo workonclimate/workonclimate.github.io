@@ -98,36 +98,6 @@
     text-decoration: underline;
   }
 
-  .values-grid{
-    display: grid;
-/*    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 16px;*/
-/*    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));*/
-    grid-gap: 16px;
-/*    align-items: center;
-    justify-items: center;*/
-  }
-
-  .value-box{
-    background-color: #DAE8F5;
-    padding: 16px 32px;
-    box-shadow: -2px 2px #FBFBFB;
-  }
-
-  .how-it-works-grid{
-    display: grid;
-    grid-column-gap: 16px;
-/*    grid-template-columns: min-content min-content;*/
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  }
-
-  .how-it-works-grid>img{
-    width: 350px;
-  }
-
-  .how-it-works-grid>div{
-    padding: 0px 32px;
-  }
 
   .join-us-button{
     text-decoration: none;
@@ -157,11 +127,6 @@
     color: white;    
   }
 
-  .tiny{
-    margin:16px 0px;
-    font-size: 10px;
-    color: rgba(255, 255, 255, 0.4);
-  }
 
   .core-members>div{
     color: #fff;
@@ -236,27 +201,10 @@
 }
 
 @media (max-width: 699px){
-  /* hide all but one image for mobile */
-  .how-it-works-grid img:not(:first-child){
-    display: none;
-  }
-  .values-grid{
-    grid-template-columns: minmax(250px, 350px);
-  }
-
-  .how-it-works-grid div{
-    padding-left: 0px;
-  }
-
   .core-members{
     margin-top: 32px;
     margin-bottom: 16px;
   }
-
-  .tiny {
-    margin: 4px 0px;
-  }
-
 
   .banner-section, .values-section, .program-grid, .footer-section{
     grid-template-columns: 1fr;
@@ -265,14 +213,6 @@
 }
 
 @media (min-width: 700px){
-  /* short text, so needs a bit on the top when in grid view */
-  .community{
-    margin-top:90px;
-  }
-  .values-grid{
-    grid-template-columns: repeat(3, 1fr);
-  }
-
   .core-members{
     align-self: start;
     margin-top: 16px;
