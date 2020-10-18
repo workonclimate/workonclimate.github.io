@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<base target="_blank">
 
 <link rel="icon" type="image/x-icon" href="https://workonclimate.org/favicon.ico">
 
@@ -144,10 +145,18 @@
     grid-template-columns: 50px 1fr;
     grid-column-gap: 16px;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin: 20px;
+    padding: 12px 20px;
     background-color: white;
+    height: 100%;
+    box-sizing: border-box;
   }
+
+  .program-grid{
+  grid-auto-rows: 1fr;
+  grid-row-gap: 16px;
+  grid-column-gap: 32px;
+  margin-bottom: 16px;
+}
 
   .program-block img{
     margin-top: 1.5em;
@@ -187,17 +196,16 @@
   box-sizing: border-box;
 }
 
-.program-grid{
-  grid-auto-rows: 1fr;
-}
 
 .banner-section, .values-section, .program-grid{
   display: grid; 
   grid-template-columns: 1fr 1fr;
 }
 
+
 .happy-img, .planet-img{
   width: minmax(100%,400px);
+  margin-top: 24px;
 }
 
 .program-grid a{
@@ -212,6 +220,10 @@
 
   .banner-section, .values-section, .program-grid, .footer-section{
     grid-template-columns: 1fr;
+  }
+
+  .happy-img, .planet-img{
+    margin-top: 0;
   }
 
 }
@@ -253,10 +265,10 @@
 
 
 
-<section class="banner-section centered-section">
+<section class="banner-section centered-section" style="grid-column-gap: 24px">
 
   <div>
-  <h2>We help you find a way to contribute to fixing climate change</h2>
+  <h2>We help you find a way to contribute to climate action</h2>
 
   <p class="lead-p">
   We are an action-oriented Slack community for people serious about working long-term to address the climate crisis.
