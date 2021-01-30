@@ -206,6 +206,7 @@
 .banner-section, .values-section{
   display: grid; 
   grid-template-columns: 1fr 1fr;
+  grid-column-gap: 32px;
 }
 
 .program-grid{
@@ -217,7 +218,7 @@
   color: #555;
 }
 
-.happy-img, .planet-img{
+.big-img{
   width: minmax(100%,400px);
   margin-top: 24px;
 }
@@ -232,6 +233,9 @@
   font-size: 10px;
 }
 
+.mobile-only{
+  display: none;
+}
 
 @media (max-width: 699px){
   .rhs{
@@ -243,7 +247,7 @@
     grid-template-columns: 1fr;
   }
 
-  .happy-img, .planet-img{
+  .big-img{
     margin-top: 0;
   }
 
@@ -255,6 +259,14 @@
   .program-block{
     text-align: center;
     padding: 0 20px;
+  }
+
+  .mobile-only{
+    display: block;
+  }
+
+  .not-on-mobile{
+    display: none;
   }
 
 
@@ -313,7 +325,7 @@
   </div>
 
 
-  <img class="happy-img" src="happy.png">
+  <img class="big-img" src="happy.png">
 
 </section>
 
@@ -419,6 +431,8 @@
 <div>
 <h2>Our values</h2>
 
+<img class="mobile-only" src="woc-pop-logo-trans.png">
+
 <h3>We focus on action</h3>
 <p>
 Get your hands busy with something, and boom, you're moving!
@@ -440,7 +454,7 @@ Don't go alone — work with different people, learn from each other, find someo
 </div>
 
 
-<img src="planet-trans.png" class="planet-img">
+<img class="not-on-mobile" src="woc-pop-logo-trans.png" style="align-self:center; margin-bottom: 32px; margin-left: 16px" class="big-img">
 
 </section>
 </section>
